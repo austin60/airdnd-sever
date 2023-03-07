@@ -23,7 +23,7 @@ app.use('/airdnd',signInUrls);
 app.use('/airdnd',aggregateUrl);
 
 //serving the frontend
-app.use(express.static(path.join(__dirname, "./client/build")));
+/*app.use(express.static(path.join(__dirname, "./client/build")));
 
 app.get("*", function(_,res){
     res.sendFile(
@@ -32,7 +32,7 @@ app.get("*", function(_,res){
             res.status(500).send(err)
         }
     )
-})
+})*/
 
 //listen at server
 const port=process.env.PORT||5000;
